@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+	{% block lightviewCSS %}
+	<!-- Lightview -->
+		<link rel="stylesheet" type="text/css" href="/static/css/lightview.css"/>
+			
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="scripts/excanvas.js"></script>
+		<![endif]-->
+		<script type="text/javascript" src="/static/scripts/spinners.min.js"></script>
+		<script type="text/javascript" src="/static/scripts/lightview.js"></script>
+	{% endblock %}
+	
+	{% block body_header%}
+	<body class="about">
+	{% endblock%}
+
+	{% block site_wrapper %}
+	<div class ="e-container-fluid">
+	
+	
+	<!-- You're code goes here, save all css modifications to about_style.css
+		 DO NOT modify any existing css classes because it could effect other pages that
+		 use that class. If you see something you like but needs to be tweaked just a little,
+		 just copy the contents, make the tweak, but give it a different name, and save the 
+		 new css class into about_style.css
+		 Make sure you use unique class names in your css file because about_style.css
+		 will be merged with other css files later on.  
+		 
+		 A few helpful tips that might save you some time
+		 1) if you want to add a photo, first save it in ecomstore/templates/images
+		 	the path becomes /static/images/<name of file>
+		 2) How an element gets placed on the page is determine by not only its own 'position'
+		    attribute, but its parent's 'position' attribute as well. Generally you want to
+		    place absolute positioned items inside of a parent whose position attribute is relative
+		 3) The pages with a '_bs' at the end have the generic bootstrap theme, you can use those as
+		 	building blocks if you like, remember, dont edit the bootstrap css files though.
+		 4) Feel free to add javascript if you like, theres tons of cool free scripts out online
+		    that may just need a few tweaks to fit our page
+
+		 -->
+
+	</div>
+	{% endblock %}
+

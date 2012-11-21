@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="description" content="Michael A. Collins Jewelers, a well known San Diego Local jewelery store" />
+		<meta name="keywords" content="Jewelers" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Michael A. Collins-Fine Jewelers</title>
+
+<!-- Styles -->
+
+		<link href="/static/css/bootstrap.css" rel="stylesheet" />
+		<link href="/static/css/themeStyle.css" rel="stylesheet" />
+		<link href="/static/css/theme-phone.css" rel="stylesheet" />
+		<link href="/static/css/theme-tablet.css" rel="stylesheet" />
+		<link href="/static/css/ecom_style.css" rel="stylesheet" />
+		<link href="/static/css/about_style.css" rel="stylesheet" />
+		<link href="/static/css/contact_style.css" rel="stylesheet" />
+		<link href="/static/css/services_style.css" rel="stylesheet" />
+		<link href="/static/css/shop_online_style.css" rel="stylesheet" />
+		<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Limelight" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'>
+		
+<!-- Scripts -->
+		
+		<!--[if lt IE 9]>
+    	<script src="scripts/html5.js"></script>
+    	<![endif]-->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="/static/scripts/bootstrap.min.js"></script> 
+	
+		{% block lightviewCSS %}
+		{% endblock %}
+		
+		{% block GoogleMapJS %}
+		{% endblock %}
+		
+		{% block CameraJS %}
+		{% endblock %}	
+				
+	</head>	
+	
+	{% block body_header%}
+	{% endblock %}
+	<div class="e-wrapper">
+	<div class="e-navbar-container">
+		<div class="span4" style="margin-top:20px">
+			<a class = "logo"> <center>Michael A. Collins Jewelry </center> </a>
+		</div>	
+			<div class= "span8">
+			
+				<div class="row">
+				{% block shop_cart%}
+				{% endblock %}
+					
+				{% block account %}
+				{% endblock %}
+					
+				{% block search%}
+				{% endblock %} 
+				</div>
+
+				<div class="row">
+				<ul id="e-links">
+					<li class="index">
+						<a href="index.html">Home</a>
+					</li>
+					<li class="services">
+						<a href="services.html">Services</a>
+					</li>
+					<li class="shop_online">
+						<a href="shop_online.html">Shop-Online</a>
+					</li>
+					<li class="about">
+						<a href="about.html">About</a>
+					</li>
+					<li class="contact">
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+				</div>
+			</div>
+											
+				<!--  <form class="e-navbar-search">
+				<input type="text" class="search-query" placeholder="search">
+				</form>  -->
+						
+	</div>	
+
+		<!-- <div class="navbar-inner">
+			
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>			
+				<div class="nav-collapse collapse navigation-top pull-right">
+				  <div class="row">
+					
+					
+				  </div>
+				</div>
+		</div> -->
+    {% block site_wrapper %}
+    {% endblock %}
+
+</div>
+<!-- Footer -->
+	<footer>
+		<div class="e-footer-heading">
+		<a class="brand" href="index.html">Meet Michael Collins, Your Quality Jeweler</a>		
+		</div>	
+		
+	</footer>
+</body>
+	
+</html>
